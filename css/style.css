@@ -1,0 +1,606 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Oswald:wght@400;500&display=swap');
+
+
+
+/* Box Model Hack */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+body{
+  width:100%;
+  height: auto;
+  background: white ;
+  overflow-x: hidden;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  height:8em;
+  width: 100%;
+  background: rgba(102,118,138);
+}
+.hamburger{
+    width:50px;
+    height:50px;
+    display:block;
+    border: none;
+    padding:0px;
+    margin: 20px;
+    display: none;
+    text-decoration: none;
+}
+.line{
+  width:35px;
+  height:5px;
+  background-color:white ;
+  margin: 6px 0;
+}
+
+header nav {
+  list-style:none;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  font-size: 1.6rem;
+}
+header nav ul{
+  display:flex;
+  width:50%;
+  flex-direction: row;
+  color:white;
+}
+header a{
+  text-decoration: none;
+  color:white;
+  font-weight: 500;
+}
+header li{
+  display: flex;
+  flex-direction: column;
+  width:20%;
+  color:white;
+  font-style: normal;
+  margin: .8em 0 0 3rem;
+  text-transform: uppercase;
+}
+header button{
+  width: 8rem;
+  height: 3rem;
+  margin-right: 3em;
+  border: solid rgba(102,118,138) .5px;
+  border-radius: .3em;
+  background-color: white;
+  margin-top: .8em;
+  color: rgba(102,118,138);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+main{
+  width: 100%;
+  background: rgba(102,118,138);
+}
+main section{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+main section h1{
+  display: flex;
+  justify-content: center ;
+  color: white;
+  font-size: 4rem;
+}
+main section p{
+  display:flex;
+  align-self: center;
+  font-size: 1.6rem;
+  font-family: 'Oswald', 'sans-serif';
+  color:white;
+  text-align: center; 
+  width: 62%;
+
+}
+
+main section a{
+display:flex;
+justify-content: center;
+margin-top: 2rem;
+color:white;
+font-size: 1.6rem;
+font-family: 'Oswald', 'sans-serif';
+
+}
+
+main section span{
+  display:flex;
+  justify-content: center;
+  margin-top: 5rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.why{
+  height:fit-content;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background:white;
+}
+.why span {
+  display:flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 7rem;
+  font-weight: 700;
+}
+.why p {
+  display:flex;
+  align-self: center; 
+  text-align: center;  
+  width: 35%;
+  font-size: 1.6rem;
+  font-family: 'Oswald', 'sans-serif';
+  color: gray;
+  padding: 1rem 0 0 0;
+
+}
+.bigBox{
+  background: rgba(219,223,226);
+  height: 55em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 10rem;
+  margin: 0 auto;
+  text-align: center;
+  
+  
+}
+.firstPicture {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.secondPicture{
+  display:flex;
+  justify-self: center;
+  align-self: center;  
+  padding-top: 10%;
+}
+.visit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+
+.visit h2{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+ .visitInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  font-size: 1.6rem;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 1rem;
+ }
+
+
+ .seeClass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+   width: 15rem;
+   height: 5rem;
+   font-size: 1.6rem;
+   color: white;
+   background-color: rgba(102,118,138);
+   border-radius: 10%;
+   border: 1px solid grey;
+  margin-top: 2rem;
+}
+.you {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width:45%;
+}
+
+.you h2{
+  display:flex;
+  justify-self: center;
+  align-self: center;
+  margin-top: 1rem;
+}
+.youInfo{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  font-size: 1.6rem;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 1rem;
+}
+.hireUs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgba(102,118,138);
+  border-radius: 10%;
+  border: 1px solid grey;
+   margin-top: 2.2rem;
+}
+
+
+
+.volunteer{
+  display:flex;
+  flex-direction: column;
+  margin: 5% 0 0 0;
+  height: 325px;
+}
+.volunteer h3{
+  display:flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 4rem 0 0 2rem;
+}
+.volunteer p{
+  display:flex;
+  align-self: center;
+  text-align: center;
+  width: 40%;
+  font-size:1.6rem;
+  font-family: 'Oswald', 'sans-serif';
+  margin-top: 2rem;
+}
+.volunteerButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgba(102,118,138);
+  border: 1px solid grey;
+  margin-top: 3rem;
+  border-radius: 10%;
+}
+
+footer{
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: #161f2a;
+}
+
+.socials ul{
+  margin: 3rem 0 0 3rem;
+  display: flex;
+}
+
+.socials li {
+  list-style: none;
+  display:flex;
+  margin-left: 1.5rem;
+}
+
+.siteMap h5{
+  display: flex;
+  margin: 2rem 0 0 4.5rem;
+  color:gray;
+  font-size: 1.4rem;
+}
+
+.siteMap ul{
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+  width:40%;
+  color:white;
+  font-size: 1.4rem;
+  margin: 0 0 0 4.5rem;
+}
+
+.siteMap li{
+  margin: 10% 40% 0 0;
+
+}
+
+
+.contribute h5{
+  color:grey;
+  margin: 2rem 0 0 4.5rem;  
+  font-size: 1.4rem;
+}
+
+.contribute ul{
+  display:flex;
+  flex-direction: row ;
+  list-style: none;
+  color:white;
+  margin: 1rem 0 0 4.5rem;
+}
+.contribute li{
+  margin: 0 5rem 0 0;
+  font-size: 1.4rem;
+}
+.info ul{
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  color:white;
+  margin: 6rem 6rem 0 0;
+  font-size: 1.6rem;
+
+}
+
+.company{
+  font-weight: 700;
+}
+.name{
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.email{
+  font-weight: 700;
+}
+
+.copyright{
+  color:white;
+  display:flex;
+  align-self: flex-end;
+  margin: 0 0 2rem 4.5rem;
+  border-top:2px solid white;
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  min-width: 90% ;
+}
+/******************************************
+/*****************************
+***********Media Queries************/
+
+
+@media (min-width: 320px){
+  .hamburger{
+    display:block;
+  }
+  nav ul li, .donate{
+    display:none;
+  }
+  main{
+    height:450px;
+  }
+  main h1{
+    text-align: center;
+  }
+  .why{
+    height: 300px;
+  }
+  .why p{
+  width:80%;
+  }
+  .bigBox{
+    height:fit-content;
+  }
+ .firstPicture{
+  width:100%;
+ }
+ .visit{
+  width:100%;
+ }
+ .visit p{
+  width: 250%;
+ }
+ .secondPicture{
+  width:100%;
+ }
+ .you{
+  width:100%;
+  align-items: center;
+ }
+ .you p{
+  width:250%;
+ }
+ .volunteer{
+  height:425px;
+ }
+ .volunteer h3{
+  text-align: center;
+ }
+ .volunteer p{
+   width:100%;
+ }
+
+  footer{
+  width: 100%;
+  height:275px;
+ }
+ 
+ .socials ul{
+  margin: 2rem 0
+ }
+ .socials li{
+    height:3rem;
+  }
+  .siteMap h5, .contribute h5{
+    margin:0 0 0 1rem; 
+    width: 45%;
+    }
+  .siteMap span, .contribute span{
+    margin: 0 0 0 1rem;
+    font-size: 1.2rem ;
+    display:inline-block;
+  }
+  .siteMap ul, .contribute ul{
+    margin-left: 0;
+    }
+  .company, .name, footer ul li, .email{
+    justify-self: flex-start;
+    align-self: flex-start;
+    font-size: 1.2rem;
+    
+  }
+  .info{
+    margin: -17rem 0 0 16rem;
+  }
+  .copyright{
+    font-size: 1rem;
+    margin: 0 0 0 1rem;
+  }
+}
+
+@media screen and (min-width: 480px){
+  main{
+    height:35em;
+  } 
+  h1{
+    text-align: center;
+    }
+  .why{
+    height: 350px ;
+  }
+  .bigBox{
+    height:fit-content;
+  }
+  .firstPicture{
+    width: 100%;
+  }
+  .secondPicture{
+    width:100%;
+  }
+  .visit{
+    width: 100%;
+  }
+  .visit p, .you p{
+    width:100%
+  }
+  .volunteer p{
+    width:80%;
+  }
+  .you{
+    width: 100%;
+  }
+  .info{
+    margin-left: 30rem;
+  }
+  .copyright{
+    margin-bottom: 10rem;
+  }
+}
+
+@media (min-width: 711px){
+  .hamburger{
+    display:none;
+  }
+  nav ul li, .donate{
+    display:flex;
+  }
+  main section h1, .why span, .volunteer h3 {
+    font-size: 4em;
+  }
+
+  .visit h2, .you h2{
+    font-size: 3rem;
+  }
+  main section p, .why p, .volunteer p, .visit p, .you p{
+    font-size: 2em;
+  }
+  .visit{
+    width:45%;
+  }
+  .visit p, .you p{
+    width:50%;
+  }
+  .you{
+    width:45%;
+  }
+  .info{
+    margin: 0;
+  }
+}
+
+@media(min-width: 1440px){
+
+  main{
+    height:fit-content
+  }
+  main section h1, .why span, .volunteer h3{
+    font-size: 7em;
+  }
+  .visit h2, .you h2{
+    font-size: 5rem;
+  }
+  main section p, .why p, .volunteer p, .visit p, .you p{
+    font-size: 5em;
+  }
+  main section span, main section a{
+    font-size: 3em;
+  }
+  .why{
+    height:500px;
+  }
+  .why span, .why p{
+    text-align: center;
+  }
+
+  
+}
+
+
+
+
