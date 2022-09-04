@@ -1,6 +1,8 @@
 # Old Dogs Rescue
 A static responsive website layout for a rescue for old dogs.
 
+![](https://github.com/smalljalexander/old-dogs-rescue/blob/main/old%20dog%20rescue.gif)
+
 Site link: <a href ="https://olddogsrescue.netlify.app"> Old Dogs Rescue </a>
 
 # How it’s made
